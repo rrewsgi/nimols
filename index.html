@@ -7,28 +7,34 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
 
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="js/script.js">
     <title>nimols</title>
 </head>
 <body>
     <header>
         <nav class="navbar">
             <img src="img/logo.png" alt="logo" width="10%" height="10%">
-            <div class="menu">
+            <div class="menu" id="menu">
                 <a href="#">Catalog</a>
-                <a href="#">Promotions</a>
+                <a href="#Promotions">Promotions</a>
                 <a href="#">Delivery and Payment</a>
-                <a href="#">Contacts</a>
+                <a href="#footer">Contacts</a>
             </div>
             <div class="icons">
                 <i class="fas fa-shopping-bag"></i>
                 <i class="fas fa-heart"></i>
-                <i class="fas fa-user"></i>
+                <a href="/module-2-rrewsgi/form/index.html" class="fas fa-user"></a>
             </div>
             <div class="search">
                 <input placeholder="search.." type="text"/>
                 <i class="fas fa-search"></i>
             </div>
+            
+            <div class="hamburger" id="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
         </nav>
+        
     </header>
 
     <main>
@@ -54,15 +60,15 @@
                 </div>
         </section>
 
-        <section class="weekly-deals">
+        <section class="weekly-deals" id="Promotions">
             <h2>
                 This week's best
             </h2>
             <div class="tabs">
-                <button>For Dogs</button>
-                <button>For Cats</button>
-                <button>For Birds</button>
-                <button>For Hamsters</button>
+                <a href="#">For Dogs</a>
+                <a href="#">For Cats</a>
+                <a href="#">For Birds</a>
+                <a href="#">For Hamsters</a>
             </div>
             <div class="products">
                 <div class="for dogs">
@@ -134,11 +140,11 @@
         </section>
     </main>
 
-    <footer>
+    <footer id="footer">
         <div class="footer-content">
             <div class="footer-section">
-                <h3>Pet Friendly</h3>
-                <p>© 2024 Pet Friendly.</p>
+                <img src="img/logo.png" alt="logo">
+                <p>© 2024 Nimols.</p>
             </div>
             <div class="footer-section">
                 <h3>Menu</h3>
@@ -172,7 +178,7 @@
             </div>
             <div class="footer-section">
                 <h3>Contact</h3>
-                <p>+62 838 0229 3814</p>
+                <p>+62 00000</p>
             </div>
         </div>
     </footer>
